@@ -21,6 +21,7 @@ crewai install
 ### Customizing
 
 **Add your `MODEl_API_KEY` into the `.env` file**
+
 **Add your `MEM0_API_KEY` into the `.env` file**
 
 - Modify `src/knowledge_chatbot_using_crewai/config/agents.yaml` to define your agents
