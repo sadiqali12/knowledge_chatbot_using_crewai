@@ -1,0 +1,23 @@
+[project]
+name = "knowledge_chatbot_using_crewai"
+version = "0.1.0"
+description = "knowledge_chatbot_using_crewai using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0"
+]
+
+[project.scripts]
+knowledge_chatbot_using_crewai = "knowledge_chatbot_using_crewai.main:run"
+run_crew = "knowledge_chatbot_using_crewai.main:run"
+train = "knowledge_chatbot_using_crewai.main:train"
+replay = "knowledge_chatbot_using_crewai.main:replay"
+test = "knowledge_chatbot_using_crewai.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
